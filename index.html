@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loveable — AI Presentation</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Sora', sans-serif; background: #f7f6f3; color: #1a1a18; min-height: 100vh; padding: 3rem 1.5rem; }
+  .container { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+  .slide { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 2.5rem 3rem; }
+  .slide-num { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #aaa89f; margin-bottom: 1rem; }
+  .slide-heading { font-size: 2rem; font-weight: 600; color: #1a1a18; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+  .slide-sub { font-size: 14px; color: #888780; font-weight: 300; }
+  .description-box { margin-top: 1.5rem; background: #f7f6f3; border-radius: 10px; padding: 1.25rem 1.5rem; min-height: 100px; }
+  .description-box p { font-size: 15px; color: #444441; font-weight: 300; line-height: 1.7; }
+  .pics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 1.5rem; }
+  .pic-slot { background: #f7f6f3; border: 1.5px dashed #d3d1c7; border-radius: 10px; aspect-ratio: 4/3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; }
+  .pic-slot svg { opacity: 0.35; }
+  .pic-slot span { font-size: 12px; color: #aaa89f; font-weight: 400; }
+  .links-list { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 10px; }
+  .link-row { display: flex; align-items: center; gap: 12px; background: #f7f6f3; border-radius: 10px; padding: 0.85rem 1.25rem; }
+  .link-icon { width: 28px; height: 28px; border-radius: 6px; background: #e8e6e0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .link-label { font-size: 11px; color: #aaa89f; text-transform: uppercase; letter-spacing: 0.07em; }
+  .link-url { font-size: 14px; color: #1a1a18; font-weight: 400; }
+  .pos-neg { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 1.5rem; }
+  .pos-box { background: #eaf3de; border-radius: 12px; padding: 1.25rem 1.5rem; }
+  .pos-box .box-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: #3b6d11; margin-bottom: 0.75rem; }
+  .neg-box { background: #fcebeb; border-radius: 12px; padding: 1.25rem 1.5rem; }
+  .neg-box .box-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: #a32d2d; margin-bottom: 0.75rem; }
+  .point-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .point-list li { font-size: 14px; font-weight: 300; line-height: 1.5; padding-left: 1rem; position: relative; }
+  .pos-box .point-list li { color: #27500a; }
+  .pos-box .point-list li::before { content: '+'; position: absolute; left: 0; font-weight: 500; color: #639922; }
+  .neg-box .point-list li { color: #791f1f; }
+  .neg-box .point-list li::before { content: '−'; position: absolute; left: 0; font-weight: 500; color: #e24b4a; }
+  .placeholder { color: #c4c2ba; font-style: italic; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="slide">
+    <div class="slide-num">Slide 1 — Title</div>
+    <div class="slide-heading">Loveable</div>
+    <div class="slide-sub">Your heading goes here</div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-num">Slide 2 — About</div>
+    <div class="slide-heading">About Loveable</div>
+    <div class="slide-sub">Describe what Loveable is and what it does</div>
+    <div class="description-box">
+      <p class="placeholder">Your description goes here…</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-num">Slide 3 — Pictures</div>
+    <div class="slide-heading">Pictures</div>
+    <div class="slide-sub">Add your images here</div>
+    <div class="pics-grid">
+      <div class="pic-slot">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        <span>Image 1</span>
+      </div>
+      <div class="pic-slot">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        <span>Image 2</span>
+      </div>
+      <div class="pic-slot">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        <span>Image 3</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-num">Slide 4 — Links</div>
+    <div class="slide-heading">Links</div>
+    <div class="slide-sub">Useful links about Loveable</div>
+    <div class="links-list">
+      <div class="link-row">
+        <div class="link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
+        <div><div class="link-label">Link 1</div><div class="link-url placeholder">Paste your URL here</div></div>
+      </div>
+      <div class="link-row">
+        <div class="link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
+        <div><div class="link-label">Link 2</div><div class="link-url placeholder">Paste your URL here</div></div>
+      </div>
+      <div class="link-row">
+        <div class="link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
+        <div><div class="link-label">Link 3</div><div class="link-url placeholder">Paste your URL here</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="slide-num">Slide 5 — Pros &amp; Cons</div>
+    <div class="slide-heading">Pros &amp; cons</div>
+    <div class="slide-sub">What's good and what's not about Loveable</div>
+    <div class="pos-neg">
+      <div class="pos-box">
+        <div class="box-label">Positives</div>
+        <ul class="point-list">
+          <li class="placeholder">Add a positive point</li>
+          <li class="placeholder">Add a positive point</li>
+          <li class="placeholder">Add a positive point</li>
+        </ul>
+      </div>
+      <div class="neg-box">
+        <div class="box-label">Negatives</div>
+        <ul class="point-list">
+          <li class="placeholder">Add a negative point</li>
+          <li class="placeholder">Add a negative point</li>
+          <li class="placeholder">Add a negative point</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
